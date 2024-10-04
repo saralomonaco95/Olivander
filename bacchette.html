@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Olivander - Bacchette</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <!--Navbar-->
+    <div class="container-flud">
+        <nav class="navbar navbar-expand-lg rosso  ">
+            <a class="navbar-brand" href="index.html"><img src="Olivandersenzasfondo.png" alt=""></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav">
+    
+                <li class="nav-item">
+                  <a class="nav-link text-light font-weight-bold" href="bacchette.html">Bacchette</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-light font-weight-bold" href="inserisciBacchetta.html">Inserisci Bacchetta</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-light font-weight-bold" href="casate.html">Casate</a>
+                  </li>
+              </ul>
+            </div>
+          </nav>
+ <!--tabella bacchette -->
+<div class="container">
+<div class="row ">
+<div class="col-12">
+    <table>
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>Codice</th>
+                    <th>Materiale</th>
+                    <th>Nucleo</th>
+                    <th>Lunghezza</th>
+                    <th>Resistenza</th>
+                    <th>Proprietario</th>
+                    <th>Casata</th>
+                    <th>Ambito Utilizzo</th>
+                    <th>Foto</th>
+                </tr>
+            </thead>
+            <tbody id="corpo-tabella" >
+
+            </tbody>
+        </table>
+    </table>
+</div>
+</div>
+
+</div>
+   <!-- Modal -->
+   <div class="modal fade" id="modaleModifica" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+    <div class="modal-content">
+        <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Modifica</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+        </button>
+        </div>
+        <div class="modal-body">
+         <!--   <div class="form-group ">
+                <label for="input-id">Id</label>
+                <input type="number" class="form-control" id="input-id" readonly/>-->
+            <div class="form-group ">
+                <label for="input-codice">Codice</label>
+                <input type="number" class="form-control" id="input-codice" />
+            </div>
+            <div class="form-group ">
+                <label for="input-codice">Materiale</label>
+                <input type="text" class="form-control" id="input-materiale" />
+            </div>
+            <div class="form-group">
+                <label for="input-nucleo">Nucleo</label>
+                <input type="text" class="form-control" id="input-nucleo"/>
+            </div>
+            <div class="form-group">
+                <label for="input-lunghezza">Lunghezza</label>
+                <input type="text" class="form-control" id="input-lunghezza"/>
+            </div>
+            <div class="form-group">
+                <label for="input-resistenza">Resistenza</label>
+                <input type="text" min="0" max="9999" class="form-control" id="input-resistenza"/>
+            </div>
+            <div class="form-group">
+                <label for="input-proprietario">Proprietario</label>
+                <input type="text" min="0" max="9999" class="form-control" id="input-proprietario"/>
+            </div>
+            <div class="form-group">
+                <label for="input-proprietario">Casata</label>
+                <input type="text" min="0" max="9999" class="form-control" id="input-casata"/>
+            </div>
+            <div class="form-group">
+                <label for="input-ambito">Ambito Utilizzo</label>
+                <input type="text" min="0" max="9999" class="form-control" id="input-ambito"/>
+            </div>
+            <div class="form-group">
+                <label for="input-foto">Foto</label>
+                <input type="text" min="0" max="9999" class="form-control" id="input-foto"/>
+            </div>
+
+
+        </div>
+        <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Chiudi</button>
+        <button type="button" class="btn btn-success" onclick="salva()">Salva</button>
+        </div>
+    </div>
+    </div>
+</div>
+
+
+
+
+
+<div class="col-12"></div>
+
+
+
+<!-- Footer-->
+
+<div class="card mb-3 rosso p-5 mt-5">
+    <div class="row">
+     <div  class="col-4 "></div>
+     <div class="col-4 text-light text-center"> <h4 class="text-light">Olivander& Co</h4></div>
+     <div class="col-4 "></div>
+    </div>
+ 
+   </div>
+
+
+
+    </div>
+
+
+
+<script src="bacchette.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>  
+</body>
+</html>
